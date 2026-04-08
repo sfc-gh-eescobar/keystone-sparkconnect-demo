@@ -105,8 +105,8 @@ LIMIT 5;
 -- Services for Notebooks in Workspaces are configured through the Snowsight UI,
 -- not SQL. Follow these steps:
 --
--- 1. Navigate to: Projects > Notebooks > Open any notebook
--- 2. Click the gear icon (Settings) in the top-right
+-- 1. Navigate to: Projects > Workspaces > Open your workspace
+-- 2. Open the notebook file, then click the gear icon (Settings) in the top-right
 -- 3. Under "Connected service", click "Create service" or select existing
 -- 4. Configure the service:
 --

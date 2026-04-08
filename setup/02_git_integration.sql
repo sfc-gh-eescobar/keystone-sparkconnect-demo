@@ -52,21 +52,13 @@ LS @DEMO_DB.PUBLIC.SPARK_CONNECT_DEMO_REPO/branches/main/;
 -- HOW TO CREATE A WORKSPACE FROM THIS REPO
 -- ============================================================================
 --
--- 1. In Snowsight, go to: Projects > Notebooks
--- 2. Click "+ Notebook" > "Create from Repository"
---    (or "Import .ipynb" and browse to the Git repo stage)
--- 3. Select: DEMO_DB.PUBLIC.SPARK_CONNECT_DEMO_REPO
+-- 1. In Snowsight, go to: Projects > Workspaces
+-- 2. Click "+ Workspace" > "Create from Git Repository"
+-- 3. Select repository: DEMO_DB.PUBLIC.SPARK_CONNECT_DEMO_REPO
 -- 4. Branch: main
--- 5. Path: notebook/keystone_spark_connect_text_processing.ipynb
--- 6. Configure the service as described in 01_prerequisites.sql (Step 6)
--- 7. Set Query Warehouse to SPARK_CONNECT_WH
---
--- Alternatively, you can copy the notebook from the Git repo stage:
---
--- CREATE OR REPLACE NOTEBOOK DEMO_DB.PUBLIC.SPARK_CONNECT_DEMO
---     FROM @DEMO_DB.PUBLIC.SPARK_CONNECT_DEMO_REPO/branches/main/notebook/
---     MAIN_FILE = 'keystone_spark_connect_text_processing.ipynb'
---     QUERY_WAREHOUSE = SPARK_CONNECT_WH
---     COMPUTE_POOL = SPARK_CONNECT_POOL;
+-- 5. This creates a workspace with all files from the repo
+-- 6. Open the notebook at: notebook/keystone_spark_connect_text_processing.ipynb
+-- 7. Configure the service as described in 01_prerequisites.sql (Step 6)
+-- 8. Set Query Warehouse to SPARK_CONNECT_WH
 --
 -- ============================================================================

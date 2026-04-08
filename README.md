@@ -41,15 +41,15 @@ Create a workspace directly from this GitHub repo -- no file downloads needed.
 
 1. Run `setup/01_prerequisites.sql` to create the warehouse, compute pool, and PyPI EAI
 2. Run `setup/02_git_integration.sql` to set up the Git repository in Snowflake
-3. In Snowsight, create a notebook from the Git repository (see instructions in `02_git_integration.sql`)
-4. Configure the service and set the query warehouse (see [Service Setup](#service-setup) below)
+3. In Snowsight, go to **Projects > Workspaces**, create a new workspace from the Git repository (see instructions in `02_git_integration.sql`)
+4. Open the notebook in the workspace, configure the service and set the query warehouse (see [Service Setup](#service-setup) below)
 
 ### Option B: Manual Upload
 
 1. Run `setup/01_prerequisites.sql` to create the warehouse, compute pool, and PyPI EAI
 2. Download `notebook/keystone_spark_connect_text_processing.ipynb`
-3. In Snowsight, go to **Projects > Notebooks** and upload the `.ipynb` file
-4. Configure the service and set the query warehouse (see [Service Setup](#service-setup) below)
+3. In Snowsight, go to **Projects > Workspaces**, open or create a workspace, and upload the `.ipynb` file
+4. Open the notebook in the workspace, configure the service and set the query warehouse (see [Service Setup](#service-setup) below)
 
 ## Infrastructure Setup
 
@@ -75,8 +75,8 @@ The warehouse executes all SQL pushdown from Spark Connect -- aggregations, text
 
 Services for Notebooks in Workspaces are configured through the **Snowsight UI**:
 
-1. Open your notebook in Snowsight
-2. Click the **gear icon** (Settings) in the top-right
+1. In Snowsight, go to **Projects > Workspaces** and open your workspace
+2. Open the notebook file, then click the **gear icon** (Settings) in the top-right
 3. Under **"Connected service"**, create or select a service with:
 
 | Setting | Value |
